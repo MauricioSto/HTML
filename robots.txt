@@ -1,0 +1,12 @@
+Google: User-agent: Googlebot
+Google Imagens: User-sgent: Googlebot-images
+Google Adwords: User-agent: Adsbot-Google
+Google Adsense: User-agent: Mediapartners-Google
+Yahoo: User-agent: Slurp
+Bing: User-agent: Bingbot
+Todos os mecanismos: User-agent:
+allow:/contato.html
+allow:/serviços/projetos.html
+Disallow:/prod
+Disallow:/prod/
+Disallow:print1.html

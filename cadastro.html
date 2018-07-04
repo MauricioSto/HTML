@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contato</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WB Drones - Empresa especializada em fabricações de Drones, com varios modelos e especializados para atender varios seguimentos do mercado, com mais de 20 anos, evoluindo até torna-se lider de mercado. ">
+<meta name="author" content="Alunos da AllNet Turma w9l2">
+<meta name="Keywords" content="WB Drones,Spark,Inspire,Mavic,Phanton,Agras,Imagens Aereas,Drones na Agricultura, Drones no Esporte, Drones nos Meios Comunicação,
+Drones no Lazer, Drones na Segurança, drones na Engenharia, Drones na Costrução Civil, Imagens Aéreas Incriveis, Imagens de Drones ">
+
+<link rel="icon" href="_favicon/faviCons.ico"/>
+<!-- Aqui chamamos o nosso arquivo css externo -->
+<link href="_css/estilo.css" rel="stylesheet" type="text/css">
+<!-- trazer a data no site -->
+<script language="javascript" type="text/javascript">
+dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+now = new Date
+</script>
+<!-- Validação do Formulário-->
+<script type="text/javascript">
+function validaCampo(){
+	
+if(document.cadastro.nome.value=="")
+	{
+	alert("O Campo nome é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.email.value=="")
+	{
+	alert("O Campo email é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.endereco.value=="")
+	{
+	alert("O Campo endereço é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.cidade.value=="")
+	{
+	alert("O Campo Cidade é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.estado.value=="")
+	{
+	alert("O Campo Estado é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.bairro.value=="")
+	{
+	alert("O Campo Bairro é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.pais.value=="")
+	{
+	alert("O Campo país é obrigatório!");
+	return false;
+	}
+else
+	if(document.cadastro.login.value=="")
+	{
+	alert("O Campo Login é obrigatório!");
+	return false;
+	}
+else	
+if(document.cadastro.senha.value=="")
+	{
+	alert("Digite uma senha!");
+	return false;
+	}
+else
+return true;
+}
+</script>
+
+</head>
+
+<body>
+<!-- trazer a data no site -->
+<id id="hora">	
+	<script language="javascript" type="text/javascript"> 
+		document.write ("<h2> " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   + " de " + now.getFullYear () + ". </h2>")
+	</script>
+</id>
+<id id="logo">
+		<img src= "_icons/logo.png" alt="wb drones" width="150" height="83">
+</id>
+<!-- menu -->
+<div class = "menu">
+	<ul class="menu-list">
+		<li><a href="home.html">Home</a></li>
+		<li><a href="">Drones</a>
+			<ul class="sub-menu">
+				<li><a href="phanton.html">Phanton</a></li>
+				<li><a href="spark.html">Spark</a></li>
+				<li><a href="mavic.html">Mavic</a></li>
+				<li><a href="agras.html">Agras</a></li>
+				<li><a href="inspire.html">Inspire</a></li>
+			</ul>
+		</li>
+		<li><a href="">Mercado</a>
+			<ul class="sub-menu">
+				<li><a href="agricola.html">Agricola</a></li>
+				<li><a href="engenharia.html">Engenharia</a></li>
+				<li><a href="segurancapublica.html">Segurança Pública</a></li>
+				<li><a href="meiocomunicacao.html">Comunicação</a></li>
+				<li><a href="esportivo.html">Esportivos</a></li>
+				<li><a href="lazer.html">Lazer</a></li>
+			</ul>
+		</li>	
+		<li><a href="sobre.html">Sobre</a></li>
+		<li><a href="cadastro.html">Contato</a></li>
+	</ul>
+		<id id="social">
+		<ul class="menu-social">
+  			<li><a href="https://www.facebook.com/" target="_blank"><img src="_icons/facebook.png" alt="facebook" 
+														 width="30" height="30"/></a></li>
+ 			<li><a href="https://twitter.com/" target="_blank"><img src="_icons/twitter.jpg" alt="twitter" 
+ 													width="30" height="30"/></a></li>
+ 			<li><a href="https://www.instagram.com/" target="_blank"><img src="_icons/instagram.jpg" alt="instagram" 
+ 													width="30" height="30"/></a></li>
+ 			<li><a href="https://plus.google.com/" target="_blank"><img src="_icons/google+.png" alt="googleplus" 
+ 													width="30" height="30"/></a></li>
+			<li><a href="https://www.youtube.com/" target="_blank"><img src="_icons/youtube.jpg" alt="youtube" 
+													width="30" height="30"/></a></li>
+		</ul>
+		</id>		
+</div>
+	<id id="drone">
+		<img src="_imagens/dronea.png" alt="drone phanton" width="180" height="150">
+	</id>
+	<!-- corpo -->
+<div id="apdiv1">	
+	<figure id="imagemHeader">
+		<img src= "_capas/i_contato2.jpg" alt="WB drones servido para realizar entregas" width="100%" height="430">
+
+	</figure>
+		<h1>Contato</h1>
+	<div id="formulario">
+		<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false">
+			<table width="625" border="0">
+			  <tr>
+				<td width="69">Nome:</td>
+				<td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Email:</td>
+				<td><input name="email" type="text" id="email" size="70" maxlength="60" />
+				<span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Sexo:</td>
+				<td><input name="sexo" type="radio" value="Masculino" checked="checked" />
+				  Masculino 
+				  <input name="sexo" type="radio" value="Feminino" />
+				  Feminino <span class="style1">*</span> </td>
+			  </tr>
+			  <tr>
+				<td>DDD:</td>
+				<td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />
+				Telefone:
+				  <input name="telefone" type="text" id="telefone" />
+				  <span class="style3">Apenas números</span> </td>
+			  </tr>
+			  <tr>
+				<td>Endereço:</td>
+				<td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Cidade:</td>
+				<td><input name="cidade" type="text" id="cidade" maxlength="20" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Estado:</td>
+				<td><select name="estado" id="estado">
+				  <option>Selecione...</option>
+				  <option value="AC">AC</option>
+				  <option value="AL">AL</option>
+				  <option value="AP">AP</option>
+				  <option value="AM">AM</option>
+				  <option value="BA">BA</option>
+				  <option value="CE">CE</option>
+				  <option value="ES">ES</option>
+				  <option value="DF">DF</option>
+				  <option value="MA">MA</option>
+				  <option value="MT">MT</option>
+				  <option value="MS">MS</option>
+				  <option value="MG">MG</option>
+				  <option value="PA">PA</option>
+				  <option value="PB">PB</option>
+				  <option value="PR">PR</option>
+				  <option value="PE">PE</option>
+				  <option value="PI">PI</option>
+				  <option value="RJ">RJ</option>
+				  <option value="RN">RN</option>
+				  <option value="RS">RS</option>
+				  <option value="RO">RO</option>
+				  <option value="RR">RR</option>
+				  <option value="SC">SC</option>
+				  <option value="SP">SP</option>
+				  <option value="SE">SE</option>
+				  <option value="TO">TO</option>
+					</select>
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Bairro:</td>
+				<td><input name="bairro" type="text" id="bairro" maxlength="20" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>País:</td>
+				<td><input name="pais" type="text" id="pais" maxlength="20" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Login:</td>
+				<td><input name="login" type="text" id="login" maxlength="12" />
+				  <span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td>Senha:</td>
+				<td><input name="senha" type="password" id="senha" maxlength="12" />
+					<span class="style1">*</span></td>
+			  </tr>
+			  <tr>
+				<td colspan="2"><p>
+				  <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" /> 
+				  <br />
+					<input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+					<br />
+					<span class="style1">* Campos com * são obrigatórios!</span></p>
+				<p>&nbsp; </p></td>
+			  </tr>
+			</table>
+			</form>
+	</div>
+
+	<br>
+	<div id="formulario1">
+		<h3>WB Drones</h3>
+		<p>Lider Mundial de Drones</p>
+		<h5>Rua Dr. Carvalho de Mendonça, 141 </h5>
+		<h5>Vila Belmiro - Santos - SP</h5> 
+		<h5>CEP.: 11070-102</h5>
+		<h5>Telefone: 55-13-3226-3870</h5>
+
+	</div>
+	<id id="droneContato">
+		<img src="_imagens/png/spark.png" alt="drone spark" width="200" height="170">
+	</id>
+	<id id="droneContato2">
+		<img src="_imagens/png/xp-3 a.png" alt="drone agras" width="180" height="150">
+	</id>
+	<br>
+	<br>
+</div>
+
+		<!-- colocar o rodapé -->
+	<footer>	
+		Site desenvolvido pelos alunos da WB19	
+	</footer>
+
+</body>
+</html>
